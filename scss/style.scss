@@ -138,9 +138,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5px;
-  box-shadow: 2px 2px 5px $primary;
-  opacity: 0.9;
-  background: #fff;
+  background: transparent;
 
   .nav-item {
     font-size: 1.4rem;
