@@ -184,6 +184,11 @@ body {
       text-decoration: none;
       color: black; }
 
+.nike-main h1 {
+  font-size: 1.5rem; }
+.nike-main .nike-main-vid {
+  max-height: 80vh; }
+
 @media screen and (max-width: 736px) {
   .navbar .nav-menu {
     grid-column: 3;
