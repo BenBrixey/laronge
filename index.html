@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>laronge.</title>
 </head>
-<body data-spy="scroll" data-target="#main-nav" id="portfolio">
+<body data-spy="scroll" data-target="#main-nav" id="home">
   <!-- <div id="loader-wrapper" class="preloader">
 		<div id="loader" class="preload-content"></div>
 
@@ -43,10 +43,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="./index.html" class="nav-link">Home</a>
+            <a href="#home-section" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="portfolio.html" class="nav-link">Portfolio</a>
+            <a href="#portfolio-section" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-item">
             <a href="#about-section" class="nav-link">About</a>
@@ -184,6 +184,21 @@
 
   <hr>
 
+  <section id="portfolio-section" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col py-5">
+          <h1 class="display-4 portfolio-h1">Portfolio</h1>
+          <div>
+            <img src="./img/Client List.png" class="img-fluid" alt="portfolio-brands">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
   <section id="about-section" class="about">
     <div class="container-fluid">
       <div class="row">
@@ -219,11 +234,11 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container-fluid">
+  <footer id="main-footer" class="bg-dark footer">
+    <div class="container">
       <div class="row">
-        <div class="ml-auto col-md-12">
-          <h3>@laronge.</h3>
+        <div class="col text-right py-4">
+          <p>&copy; laronge.<span id="year"></span> </p>
         </div>
       </div>
     </div>
@@ -237,6 +252,29 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav'});
+
+    // Smooth Scrolling
+    $('#main-nav a').on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
   </script>
+
+    
+
+
 </body>
 </html>

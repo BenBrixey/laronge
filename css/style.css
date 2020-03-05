@@ -182,6 +182,9 @@ body {
       text-decoration: none;
       color: black; }
 
+.footer p {
+  color: #fff; }
+
 .nike-main h1 {
   font-size: 1.5rem; }
 .nike-main .nike-main-vid {
