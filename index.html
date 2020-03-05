@@ -184,14 +184,23 @@
 
   <hr>
 
-  <section id="portfolio-section" class="py-4">
+  <section id="portfolio-section" class="py-4 portfolio">
     <div class="container">
       <div class="row">
         <div class="col py-5">
           <h1 class="display-4 portfolio-h1">Portfolio</h1>
-          <div>
-            <img src="./img/Client List.png" class="img-fluid" alt="portfolio-brands">
-          </div>
+          <div class="logo-grid">
+            <div class="portfolio-item"><a href="#amex-section"><img src="./img/american-express.png" alt="american express logo"></a></div>
+            <div class="portfolio-item"><img src="./img/under-armour.png" alt="under armour logo"></div>
+            <div class="portfolio-item"><a href="#nike-section"><img src="./img/nike.png" alt="nike logo"></a></div>
+            <div class="portfolio-item"><img src="./img/hideout.png" alt="hideout logo"></div>
+            <div class="portfolio-item"><a href="#swatch-section"><img src="./img/swatch.png" alt="swatch logo"></a></div>
+            <div class="portfolio-item"><a href="#ttp-section"><img src="./img/ttp.png" alt="ttp logo"></a></div>
+            <div class="portfolio-item"><img src="./img/lovebox.png" alt="lovebox logo"></div>
+            <div class="portfolio-item"><img src="./img/bank-of-america.png" alt="bank of america logo"></div>
+            <div class="portfolio-item"><img src="./img/oakley.png" alt="oakley logo"></div>
+            <div class="portfolio-item elrow"><img src="./img/elrow.png" alt="elrow logo"></div>
+          </div>  
         </div>
       </div>
     </div>
@@ -208,7 +217,9 @@
         <div class="ml-auto mr-auto col-4 py-5">
           <div class="row mt-5 justify-content-center">
             <h2 class="mb-5">About</h2>
-            <h3>laronge is a full-service music production agency crafting music for creative projects.</h3>
+            <h3>Founded in 2019 by Josh Thorner and Kambiz Aghdam laronge is a full service audio production company whose sole focus is crafting the highest quality work to the worlds biggest brands.</h3>
+            <br>
+            <h3>Perfect results count - not a perfect process</h3>
           </div>
           <div class="row mt-5 justify-content-center">
             <h2 class="mb-5">Contact Us</h2>
@@ -258,6 +269,21 @@
 
     // Smooth Scrolling
     $('#main-nav a').on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+
+    $('#portfolio-section a').on('click', function (event) {
       if (this.hash !== "") {
         event.preventDefault();
 
