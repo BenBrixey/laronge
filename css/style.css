@@ -46,7 +46,7 @@ body {
   .nike .container-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(1, 10em) 1fr; }
+    grid-template-rows: repeat(1, 10em) 1fr repeat(1, 6em); }
   .nike a {
     text-decoration: none; }
   .nike h2 {
@@ -59,6 +59,7 @@ body {
     align-self: center;
     justify-self: center; }
   .nike .back-vid {
+    max-width: 75vw;
     position: relative;
     grid-column: 1 / span 3;
     grid-row: 2; }
@@ -66,28 +67,48 @@ body {
     position: relative;
     grid-column: 2 / span 3;
     grid-row: 2; }
+  .nike p {
+    margin-top: 2em;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: center; }
 
-.portfolio .col {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(1, 5em) 1fr;
-  grid-gap: 5px; }
 .portfolio h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   grid-column: 1 / span 2;
   max-height: 5rem; }
 .portfolio .logo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  justify-items: center; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative; }
+.portfolio .portfolio-item {
+  display: flex;
+  min-width: 150px;
+  flex-basis: calc(25% - 20px);
+  /*  subtract the margin from the width  */
+  padding: 10px;
+  margin: 25px;
+  box-sizing: border-box;
+  justify-content: center; }
 .portfolio .portfolio-item :hover {
   background-color: #25B0A9; }
-.portfolio .elrow {
-  grid-column: 2; }
 
 .about {
   font-family: 'Goudy Bookletter 1911'; }
+  .about .about-img {
+    max-width: 50vw; }
+  .about .about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative; }
+  .about .about-item {
+    padding: 10px;
+    margin: 25px;
+    justify-content: center; }
+  .about h2 {
+    font-size: 1.5rem; }
   .about h3 {
     font-size: 1rem; }
     .about h3 a {
@@ -95,7 +116,7 @@ body {
       color: black; }
 
 .footer p {
-  color: #fff; }
+  color: black; }
 
 .nike-main h1 {
   font-size: 1.5rem; }
@@ -105,4 +126,19 @@ body {
 @media screen and (max-width: 736px) {
   .navbar .nav-menu {
     grid-column: 3;
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+
+  .home {
+    min-height: 25em; }
+    .home h1 {
+      font-size: 1rem; }
+    .home h2 {
+      font-size: 0.8rem; }
+
+  .nike {
+    min-height: 30em; }
+    .nike p {
+      margin-top: 2em;
+      grid-column: 1;
+      grid-row: 3;
+      justify-self: center; } }
