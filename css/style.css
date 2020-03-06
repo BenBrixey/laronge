@@ -141,4 +141,14 @@ body {
       margin-top: 2em;
       grid-column: 1;
       grid-row: 3;
-      justify-self: center; } }
+      justify-self: center; }
+
+  .portfolio .portfolio-item {
+    display: flex;
+    min-width: 100px;
+    flex-basis: calc(25% - 25px);
+    /*  subtract the margin from the width  */
+    padding: 10px;
+    margin: 2.1em;
+    box-sizing: border-box;
+    justify-content: center; } }
