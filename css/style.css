@@ -1,14 +1,5 @@
-.line-1 {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%); }
-
 body {
-  margin-top: 10em;
+  margin-top: 15em;
   font-family: 'Goudy Bookletter 1911'; }
 
 .navbar {
@@ -18,8 +9,7 @@ body {
   background: transparent; }
   .navbar .nav-item {
     font-size: 1.4rem;
-    padding-right: 1rem;
-    padding-left: 1rem; }
+    padding-right: 1.4rem; }
   .navbar .nav-link {
     color: black; }
   .navbar .nav-menu {
@@ -39,7 +29,7 @@ body {
     justify-self: flex-end; }
   .navbar .animate-hover {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #25b0a9), color-stop(50%, #fee603));
-    background-image: linear-gradient(to right, transparent 50%, yellow 50%);
+    background-image: linear-gradient(to right, transparent 50%, #fee603 50%);
     background-position: 0;
     background-size: 200%;
     -webkit-transition: all 0.1s;
@@ -48,8 +38,7 @@ body {
     background-position: -100%; }
 
 .home {
-  min-height: 35em;
-  /* Animation */ }
+  min-height: 30em; }
   .home h1 {
     font-size: 2rem;
     letter-spacing: 0.3rem;
@@ -60,13 +49,7 @@ body {
     letter-spacing: 0.1rem;
     letter-spacing: 0.1rem;
     margin-left: 6.5em; }
-  .home .anim-typewriter {
-    animation: typewriter 3s steps(100) 1s 1 normal both; }
-@keyframes typewriter {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
+
 .nike {
   min-height: 40em; }
   .nike .container-fluid {
@@ -81,7 +64,7 @@ body {
     cursor: pointer; }
   .nike .nike-title {
     grid-row: 1;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     align-self: center;
     justify-self: center; }
   .nike .back-vid {
@@ -94,13 +77,12 @@ body {
     grid-column: 2 / span 3;
     grid-row: 2; }
   .nike .details {
-    margin-top: 3em;
-    margin-left: 12rem;
+    margin-left: 2em;
     grid-column: 3;
     grid-row: 1;
-    justify-self: flex-start; }
+    justify-self: center; }
     .nike .details p {
-      margin: 0.1em; }
+      margin: 0; }
 
 .portfolio h1 {
   font-size: 1.5rem;
