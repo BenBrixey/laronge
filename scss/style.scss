@@ -4,11 +4,12 @@ $animate1: #FEE603;
 $animate2: #25B0A9;
 
 body {
-  margin-top: 105px;
+  margin-top: 15em;
   font-family: 'Goudy Bookletter 1911';
 }
 
 .navbar {
+  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5px;
@@ -33,6 +34,17 @@ body {
       font-size: 1rem;
     }
 
+  }
+
+  .nav-options {
+    background-color: #fff;
+    margin-top: -0.9em;
+    margin-right: -0.5em;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    justify-self: flex-end;
   }
 
   .animate-hover {
@@ -153,7 +165,7 @@ body {
   font-family: 'Goudy Bookletter 1911';
 
   .about-img {
-    max-width: 50vw;
+    min-width: 50vw;
   }
 
   .about-grid {
@@ -167,6 +179,8 @@ body {
     padding: 10px;
     margin: 25px;
     justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   h2 {
@@ -205,13 +219,9 @@ body {
 }
 
 
-@media screen and (max-width: 736px) {
-  .navbar {
-
-    .nav-menu {
-      grid-column: 3;
-      justify-content: flex-end;
-    }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    margin-top: 10em;
   }
 
   .home {
@@ -222,7 +232,7 @@ body {
     }
 
     h2 {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 
@@ -231,9 +241,9 @@ body {
 
     p {
       margin-top: 2em;
-      grid-column: 1;
+      grid-column: 2 / span 2;
       grid-row: 3;
-      justify-self: center;
+      justify-self: flex-start;
     }
 
   }
@@ -252,9 +262,59 @@ body {
 
   }
 
-  .about-img {
-    max-height: 16em;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px)  {
+  
+  body {
+    margin-top: 5em;
   }
 
+  .navbar {
+
+    .nav-menu {
+      grid-column: 2 / span 2;
+    }
+
+  }
+
+  .home {
+    min-height: 10em;
+
+    h1 {
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      font-size: 0.6rem;
+    }
+  }
+
+  .nike {
+    min-height: 15em;
+
+    p {
+      margin-top: 2em;
+      grid-column: 2 / span 2;
+      grid-row: 3;
+      justify-self: flex-start;
+    }
+
+  }
+
+  .portfolio {
+
+    .portfolio-item {
+      display: flex;
+      min-width: 100px;
+      flex-basis: calc(25% - 25px); /*  subtract the margin from the width  */
+      padding: 10px;
+      margin: 2.1em;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+
+  }
+ 
 }
 
