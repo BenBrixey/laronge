@@ -77,6 +77,7 @@ body {
     grid-column: 2 / span 3;
     grid-row: 2; }
   .nike .details {
+    margin-top: 3em;
     margin-left: 2em;
     grid-column: 3;
     grid-row: 1;
@@ -136,7 +137,7 @@ body {
 .nike-main .nike-main-vid {
   max-height: 80vh; }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
   body {
     margin-top: 10em; }
 
@@ -149,11 +150,14 @@ body {
 
   .nike {
     min-height: 30em; }
-    .nike p {
-      margin-top: 2em;
+    .nike .details {
+      margin-top: 3em;
+      margin-left: 14em;
       grid-column: 2 / span 2;
-      grid-row: 3;
-      justify-self: flex-start; }
+      grid-row: 1;
+      justify-self: center; }
+      .nike .details p {
+        font-size: 0.6rem; }
 
   .portfolio .portfolio-item {
     display: flex;
@@ -164,7 +168,7 @@ body {
     margin: 2.1em;
     box-sizing: border-box;
     justify-content: center; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
   body {
     margin-top: 5em; }
 
@@ -172,7 +176,7 @@ body {
     grid-column: 2 / span 2; }
 
   .home {
-    min-height: 10em; }
+    min-height: 1em; }
     .home h1 {
       font-size: 0.8rem; }
     .home h2 {
@@ -180,11 +184,15 @@ body {
 
   .nike {
     min-height: 15em; }
-    .nike p {
+    .nike h2 {
+      font-size: 0.8rem; }
+    .nike .details {
       margin-top: 2em;
       grid-column: 2 / span 2;
       grid-row: 3;
-      justify-self: flex-start; }
+      justify-self: center; }
+      .nike .details p {
+        font-size: 0.6rem; }
 
   .portfolio .portfolio-item {
     display: flex;
