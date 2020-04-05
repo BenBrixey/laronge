@@ -52,13 +52,14 @@ body {
 
 .nike {
   min-height: 40em; }
-  .nike .nike-title-1 {
-    display: inline-block;
-    padding: 3px;
-    margin-left: 100px; }
-  .nike .nike-title-2 {
-    display: inline-block;
-    padding: 2px; }
+  .nike path {
+    transition: stroke-dasharray 0.5s, stroke-dashoffset 2s, opacity 0.5s; }
+    .nike path:last-child {
+      opacity: 0.9; }
+  .nike svg {
+    opacity: 0.8; }
+    .nike svg path {
+      stroke-dashoffset: 0.1; }
   .nike .container-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -66,11 +67,11 @@ body {
   .nike a {
     text-decoration: none; }
   .nike h2 {
-    position: absolute;
-    margin: 0;
     font-size: 1.5rem;
     color: black;
     cursor: pointer; }
+    .nike h2 span {
+      position: relative; }
   .nike .nike-title {
     grid-row: 1;
     grid-column: 1 / span 2;

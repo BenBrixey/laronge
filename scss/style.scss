@@ -8,6 +8,7 @@ body {
   font-family: 'Goudy Bookletter 1911';
 }
 
+
 .navbar {
   
   display: grid;
@@ -85,6 +86,17 @@ body {
 
   min-height: 40em;
 
+  .nike-title-1 {
+    display: inline-block;
+    padding: 3px;
+    margin-left: 100px;
+  }
+
+  .nike-title-2 {
+    display: inline-block;
+    padding: 2px;
+  }
+
   .container-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -96,10 +108,14 @@ body {
   }
 
   h2 {
+    position: absolute;
+    margin: 0;
     font-size: 1.5rem;
     color: black;
     cursor: pointer;
   }
+
+  
 
   .nike-title {
     grid-row: 1;
@@ -132,7 +148,7 @@ body {
       margin: 0;
     }
   }
-  
+
 }
 
 .portfolio {
@@ -341,4 +357,3 @@ body {
   }
  
 }
-
