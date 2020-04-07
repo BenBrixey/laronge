@@ -83,18 +83,7 @@ body {
 }
 
 .nike {
-
   min-height: 40em;
-
-  .nike-title-1 {
-    display: inline-block;
-    padding: 3px;
-  }
-
-  .nike-title-2 {
-    display: inline-block;
-    padding: 2px;
-  }
 
   .container-fluid {
     display: grid;
@@ -107,9 +96,8 @@ body {
   }
 
   h2 {
-    position: absolute;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     cursor: pointer;
   }
@@ -121,6 +109,47 @@ body {
     grid-column: 1 / span 2;
     align-self: center;
     justify-self: center;
+  }
+
+  .line {
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin-bottom: -102px;
+    margin-left: -20px;
+  }
+
+  .amex-link {
+    position: absolute;
+  }
+
+  .amex-highlight {
+    position: relative;
+    width: 150px;
+    margin-bottom: -65px;
+    margin-left: 150px;
+  }
+
+  .swatch-link {
+    position: absolute;
+  }
+
+  .swatch-highlight {
+    position: relative;
+    width: 130px;
+    margin-bottom: -60px;
+    margin-left: 90px;
+  }
+
+  .ttp-link {
+    position: absolute;
+  }
+
+  .ttp-highlight {
+    position: relative;
+    width: 180px;
+    margin-bottom: -60px;
+    margin-left: 30px;
   }
 
   .back-vid {
@@ -173,10 +202,11 @@ body {
     margin: 25px;
     box-sizing: border-box;
     justify-content: center;
+    text-decoration: none;
   }
 
   .portfolio-item :hover {
-    background-image: url("/img/circle-brush-stroke-11.png");
+    background-image: url("/img/circle-brush-2.png");
     background-size: 150px;
   }
 

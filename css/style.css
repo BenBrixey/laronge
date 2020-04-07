@@ -52,12 +52,6 @@ body {
 
 .nike {
   min-height: 40em; }
-  .nike .nike-title-1 {
-    display: inline-block;
-    padding: 3px; }
-  .nike .nike-title-2 {
-    display: inline-block;
-    padding: 2px; }
   .nike .container-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -65,9 +59,8 @@ body {
   .nike a {
     text-decoration: none; }
   .nike h2 {
-    position: absolute;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     cursor: pointer; }
   .nike .nike-title {
@@ -75,6 +68,33 @@ body {
     grid-column: 1 / span 2;
     align-self: center;
     justify-self: center; }
+  .nike .line {
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin-bottom: -102px;
+    margin-left: -20px; }
+  .nike .amex-link {
+    position: absolute; }
+  .nike .amex-highlight {
+    position: relative;
+    width: 150px;
+    margin-bottom: -65px;
+    margin-left: 150px; }
+  .nike .swatch-link {
+    position: absolute; }
+  .nike .swatch-highlight {
+    position: relative;
+    width: 130px;
+    margin-bottom: -60px;
+    margin-left: 90px; }
+  .nike .ttp-link {
+    position: absolute; }
+  .nike .ttp-highlight {
+    position: relative;
+    width: 180px;
+    margin-bottom: -60px;
+    margin-left: 30px; }
   .nike .back-vid {
     max-width: 75vw;
     position: relative;
@@ -110,9 +130,10 @@ body {
   padding: 10px;
   margin: 25px;
   box-sizing: border-box;
-  justify-content: center; }
+  justify-content: center;
+  text-decoration: none; }
 .portfolio .portfolio-item :hover {
-  background-image: url("/img/circle-brush-stroke-11.png");
+  background-image: url("/img/circle-brush-2.png");
   background-size: 150px; }
 
 .about {
