@@ -216,6 +216,14 @@ body {
     min-height: 15em; }
     .nike h2 {
       font-size: 0.8rem; }
+    .nike .line {
+      display: none; }
+    .nike .amex-highlight {
+      display: none; }
+    .nike .swatch-highlight {
+      display: none; }
+    .nike .ttp-highlight {
+      display: none; }
     .nike .details {
       margin-top: 2em;
       grid-column: 2 / span 2;

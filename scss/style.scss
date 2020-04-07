@@ -359,6 +359,22 @@ body {
       font-size: 0.8rem;
     }
 
+    .line {
+      display: none;
+    }
+
+    .amex-highlight {
+      display: none;
+    }
+
+    .swatch-highlight {
+      display: none;
+    }
+
+    .ttp-highlight {
+      display: none;
+    }
+
     .details {
       margin-top: 2em;
       grid-column: 2 / span 2;
