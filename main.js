@@ -5,7 +5,7 @@ var nikeAnimation = gsap.timeline()
   .to(".nike-year", {text:"year || 2020", ease: "power0", duration:0.5}, "+=0.5")
   .to(".nike-client", {text:"client || nike", ease: "power0", duration:0.5})
   .to(".nike-agency", {text:"agency || Sept Studios", ease: "power0", duration:1})
-  .from(".line", {scale: 0, duration: 1});
+  .from(".line", {scale: 0, duration: 1}, "-=1");
 
 var nikeScene = new ScrollMagic.Scene({
   triggerElement: "#nike-section",
