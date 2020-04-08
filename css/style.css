@@ -51,6 +51,8 @@ body {
     margin-left: 6.5em; }
 
 .nike {
+  margin-top: -80px;
+  max-height: 58em;
   min-height: 40em; }
   .nike .container-fluid {
     display: grid;
@@ -72,7 +74,7 @@ body {
     position: relative;
     width: 150px;
     height: auto;
-    margin-bottom: -102px;
+    margin-bottom: -65px;
     margin-left: -20px; }
   .nike .amex-link {
     position: absolute; }
@@ -85,8 +87,8 @@ body {
     position: absolute; }
   .nike .swatch-highlight {
     position: relative;
-    width: 130px;
-    margin-bottom: -60px;
+    width: 150px;
+    margin-bottom: -70px;
     margin-left: 90px; }
   .nike .ttp-link {
     position: absolute; }

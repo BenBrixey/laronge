@@ -64,7 +64,6 @@ body {
 }
 
 .home {
-
   min-height: 30em;
 
   h1 {
@@ -83,6 +82,8 @@ body {
 }
 
 .nike {
+  margin-top: -80px;
+  max-height: 58em;
   min-height: 40em;
 
   .container-fluid {
@@ -115,7 +116,7 @@ body {
     position: relative;
     width: 150px;
     height: auto;
-    margin-bottom: -102px;
+    margin-bottom: -65px;
     margin-left: -20px;
   }
 
@@ -136,8 +137,8 @@ body {
 
   .swatch-highlight {
     position: relative;
-    width: 130px;
-    margin-bottom: -60px;
+    width: 150px;
+    margin-bottom: -70px;
     margin-left: 90px;
   }
 
