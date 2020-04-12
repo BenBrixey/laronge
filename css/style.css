@@ -52,8 +52,7 @@ body {
 
 .nike {
   margin-top: -80px;
-  max-height: 58em;
-  min-height: 40em; }
+  max-height: 58em; }
   .nike .container-fluid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -208,7 +207,9 @@ body {
       font-size: 0.7rem; }
 
   .nike {
-    min-height: 30em; }
+    max-height: 40em; }
+    .nike h2 {
+      font-size: 1.7rem; }
     .nike .details {
       margin-top: 3em;
       margin-left: 14em;
@@ -245,9 +246,10 @@ body {
       font-size: 0.6rem; }
 
   .nike {
-    min-height: 15em; }
+    min-height: 20em;
+    padding: 0; }
     .nike h2 {
-      font-size: 0.8rem; }
+      font-size: 1rem; }
     .nike .line {
       display: none; }
     .nike .amex-highlight {

@@ -84,7 +84,6 @@ body {
 .nike {
   margin-top: -80px;
   max-height: 58em;
-  min-height: 40em;
 
   .container-fluid {
     display: grid;
@@ -330,7 +329,11 @@ body {
   }
 
   .nike {
-    min-height: 30em;
+    max-height: 40em;
+
+    h2 {
+      font-size: 1.7rem;
+    }
 
     .details {
       margin-top: 3em;
@@ -393,10 +396,10 @@ body {
   }
 
   .nike {
-    min-height: 15em;
-
+    min-height: 20em;
+    padding: 0;
     h2 {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
 
     .line {
