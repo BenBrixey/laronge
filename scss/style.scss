@@ -360,6 +360,10 @@ body {
 
   }
 
+  .brand-page {
+    margin-top: 0;
+  }
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 766px)  {
@@ -436,6 +440,10 @@ body {
       justify-content: center;
     }
 
+  }
+
+  .brand-page {
+    margin-top: 150px;
   }
  
 }
