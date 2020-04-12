@@ -164,10 +164,37 @@ body {
 .footer p {
   color: black; }
 
-.nike-main h1 {
-  font-size: 1.5rem; }
-.nike-main .nike-main-vid {
-  max-height: 80vh; }
+.brand-page {
+  margin-top: -100px; }
+  .brand-page .vid-line {
+    position: relative;
+    height: auto;
+    margin-top: -105px;
+    margin-left: 70px; }
+  .brand-page .amex-vid-highlight {
+    position: relative;
+    width: 110px;
+    margin-top: -105px;
+    margin-left: 210px; }
+  .brand-page .swatch-vid-highlight {
+    position: relative;
+    width: 150px;
+    margin-top: -105px;
+    margin-left: 150px; }
+  .brand-page .ttp-vid-highlight {
+    position: relative;
+    width: 120px;
+    margin-top: -105px;
+    margin-left: 140px; }
+  .brand-page h1 {
+    position: fixed;
+    margin-top: -80px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    font-size: 1.5rem; }
+  .brand-page .main-vid {
+    max-height: 75vh;
+    margin-bottom: 0; }
 
 @media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
   body {
