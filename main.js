@@ -8,7 +8,7 @@ var nikeAnimation = gsap.timeline()
   .from(".line", {scale: 0, duration: 1}, "-=1");
 
 var nikeScene = new ScrollMagic.Scene({
-  triggerElement: "#nike-section",
+  triggerElement: "#nike",
   triggerHook: 0.5,
   reverse:false
 })
@@ -25,7 +25,7 @@ var amexAnimation = gsap.timeline()
   .from(".amex-highlight", {opacity:0, duration:2}, "-=1");
 
 var amexScene = new ScrollMagic.Scene({
-  triggerElement: "#amex-section",
+  triggerElement: "#amex",
   triggerHook: 0.5,
   reverse:false
 })
@@ -42,7 +42,7 @@ var swatchAnimation = gsap.timeline()
   .from(".swatch-highlight", {opacity:0, duration:2}, "-=1");
 
 var swatchScene = new ScrollMagic.Scene({
-  triggerElement: "#swatch-section",
+  triggerElement: "#swatch",
   triggerHook: 0.5,
   reverse:false
 })
@@ -59,7 +59,7 @@ var ttpAnimation = gsap.timeline()
   .from(".ttp-highlight", {opacity:0, duration:2}, "-=1");
 
 var ttpScene = new ScrollMagic.Scene({
-  triggerElement: "#ttp-section",
+  triggerElement: "#ttp",
   triggerHook: 0.5,
   reverse:false
 })
