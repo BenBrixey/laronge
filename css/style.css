@@ -275,4 +275,6 @@ body {
     justify-content: center; }
 
   .brand-page {
-    margin-top: 150px; } }
+    margin-top: 150px; }
+    .brand-page h1 {
+      position: absolute; } }
