@@ -280,4 +280,7 @@ body {
   .brand-page {
     margin-top: 150px; }
     .brand-page h1 {
-      position: absolute; } }
+      position: absolute; }
+
+  .about .about-img {
+    display: none; } }
