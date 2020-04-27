@@ -140,6 +140,7 @@ body {
 .about {
   font-family: 'Goudy Bookletter 1911'; }
   .about .about-img {
+    margin-top: 13em;
     min-width: 50vw; }
   .about .about-grid {
     display: flex;
