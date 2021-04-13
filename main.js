@@ -1,9 +1,26 @@
+// Samsung animation controls
+
+var samsungController = new ScrollMagic.Controller();
+var samsungAnimation = gsap.timeline()
+  .to(".samsung-year", {text:"year || 2021", ease: "power0", duration:0.5}, "+=0.5")
+  .to(".samsung-client", {text:"client || Samsung", ease: "power0", duration:0.5})
+  .to(".samsung-agency", {text:"agency || Man vs Machine", ease: "power0", duration:1})
+  .from(".line", {scale: 0, duration: 1}, "-=1");
+
+var nikeScene = new ScrollMagic.Scene({
+  triggerElement: "#samsung",
+  triggerHook: 0.5,
+  reverse:false
+})
+.setTween(samsungAnimation)
+  .addTo(samsungController);
+
 // Nike animation controls
 
 var nikeController = new ScrollMagic.Controller();
 var nikeAnimation = gsap.timeline()
   .to(".nike-year", {text:"year || 2020", ease: "power0", duration:0.5}, "+=0.5")
-  .to(".nike-client", {text:"client || nike", ease: "power0", duration:0.5})
+  .to(".nike-client", {text:"client || Nike", ease: "power0", duration:0.5})
   .to(".nike-agency", {text:"agency || Sept Studios", ease: "power0", duration:1})
   .from(".line", {scale: 0, duration: 1}, "-=1");
 
