@@ -1,3 +1,20 @@
+// Google animation controls
+
+var googleController = new ScrollMagic.Controller();
+var googleAnimation = gsap.timeline()
+  .to(".google-year", {text:"year || 2021", ease: "power0", duration:0.5}, "+=0.5")
+  .to(".google-client", {text:"client || Google", ease: "power0", duration:0.5})
+  .to(".google-agency", {text:"agency || Man vs Machine", ease: "power0", duration:1})
+  .from(".line", {scale: 0, duration: 1}, "-=1");
+
+var nikeScene = new ScrollMagic.Scene({
+  triggerElement: "#google",
+  triggerHook: 0.5,
+  reverse:false
+})
+.setTween(googleAnimation)
+  .addTo(googleController);
+
 // Samsung animation controls
 
 var samsungController = new ScrollMagic.Controller();
@@ -21,7 +38,7 @@ var nikeController = new ScrollMagic.Controller();
 var nikeAnimation = gsap.timeline()
   .to(".nike-year", {text:"year || 2020", ease: "power0", duration:0.5}, "+=0.5")
   .to(".nike-client", {text:"client || Nike", ease: "power0", duration:0.5})
-  .to(".nike-agency", {text:"agency || Sept Studios", ease: "power0", duration:1})
+  .to(".nike-agency", {text:"agency || Stept Studios", ease: "power0", duration:1})
   .from(".line", {scale: 0, duration: 1}, "-=1");
 
 var nikeScene = new ScrollMagic.Scene({

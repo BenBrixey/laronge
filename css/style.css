@@ -1,128 +1,164 @@
 body {
   margin-top: 15em;
-  font-family: 'Goudy Bookletter 1911'; }
+  font-family: "Prata";
+}
 
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5px;
-  background: transparent; }
-  .navbar .nav-item {
-    font-size: 1.4rem;
-    padding-right: 1.4rem; }
-  .navbar .nav-link {
-    color: black; }
-  .navbar .nav-menu {
-    justify-content: center;
-    grid-column: 2;
-    cursor: pointer; }
-    .navbar .nav-menu h3 {
-      font-size: 1rem; }
-  .navbar .nav-options {
-    background-color: #fff;
-    margin-top: -0.9em;
-    margin-right: -0.5em;
-    padding-top: 2em;
-    padding-right: 2em;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    justify-self: flex-end; }
-  .navbar .animate-hover {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #25b0a9), color-stop(50%, #fee603));
-    background-image: linear-gradient(to right, transparent 50%, #fee603 50%);
-    background-position: 0;
-    background-size: 200%;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s; }
-  .navbar .animate-hover:hover {
-    background-position: -100%; }
+  background: transparent;
+}
+.navbar .nav-item {
+  font-size: 1.4rem;
+  padding-right: 1.4rem;
+}
+.navbar .nav-link {
+  color: black;
+}
+.navbar .nav-menu {
+  justify-content: center;
+  grid-column: 2;
+  cursor: pointer;
+}
+.navbar .nav-menu h3 {
+  font-size: 1rem;
+}
+.navbar .nav-options {
+  background-color: #fff;
+  margin-top: -0.9em;
+  margin-right: -0.5em;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  justify-self: flex-end;
+}
+.navbar .animate-hover {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, #25b0a9),
+    color-stop(50%, #fee603)
+  );
+  background-image: linear-gradient(to right, transparent 50%, #fee603 50%);
+  background-position: 0;
+  background-size: 200%;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.navbar .animate-hover:hover {
+  background-position: -100%;
+}
 
 .home {
-  min-height: 30em; }
-  .home h1 {
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-    margin-left: 4em;
-    margin-bottom: -0.5em; }
-  .home h2 {
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    letter-spacing: 0.1rem;
-    margin-left: 6.5em; }
+  min-height: 30em;
+}
+.home h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  margin-left: 4em;
+  margin-bottom: -0.5em;
+}
+.home h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  margin-left: 6.5em;
+}
 
 .nike {
   margin-top: -80px;
-  max-height: 58em; }
-  .nike .container-fluid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(1, 10em) 1fr repeat(1, 6em); }
-  .nike a {
-    text-decoration: none; }
-  .nike h2 {
-    margin: 0;
-    font-size: 2rem;
-    color: black;
-    cursor: pointer; }
-  .nike .nike-title {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    align-self: center;
-    justify-self: center; }
-  .nike .line {
-    position: relative;
-    width: 150px;
-    height: auto;
-    margin-bottom: -65px;
-    margin-left: -20px; }
-  .nike .amex-link {
-    position: absolute; }
-  .nike .amex-highlight {
-    position: relative;
-    width: 150px;
-    margin-bottom: -65px;
-    margin-left: 150px; }
-  .nike .swatch-link {
-    position: absolute; }
-  .nike .swatch-highlight {
-    position: relative;
-    width: 150px;
-    margin-bottom: -70px;
-    margin-left: 90px; }
-  .nike .ttp-link {
-    position: absolute; }
-  .nike .ttp-highlight {
-    position: relative;
-    width: 180px;
-    margin-bottom: -60px;
-    margin-left: 30px; }
-  .nike .back-vid {
-    max-width: 75vw;
-    position: relative;
-    grid-column: 1 / span 3;
-    grid-row: 2; }
-  .nike .front-vid {
-    position: relative;
-    grid-column: 2 / span 3;
-    grid-row: 2; }
-  .nike .details {
-    margin-top: 3em;
-    margin-left: 2em;
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: center; }
-    .nike .details p {
-      margin: 0; }
+  max-height: 58em;
+}
+.nike .container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(1, 10em) 1fr repeat(1, 6em);
+}
+.nike a {
+  text-decoration: none;
+}
+.nike h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.nike .nike-title {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  align-self: center;
+  justify-self: center;
+}
+.nike .line {
+  position: relative;
+  width: 150px;
+  height: auto;
+  margin-bottom: -65px;
+  margin-left: -20px;
+}
+.nike .amex-link {
+  position: absolute;
+}
+.nike .amex-highlight {
+  position: relative;
+  width: 150px;
+  margin-bottom: -65px;
+  margin-left: 150px;
+}
+.nike .swatch-link {
+  position: absolute;
+}
+.nike .swatch-highlight {
+  position: relative;
+  width: 150px;
+  margin-bottom: -70px;
+  margin-left: 90px;
+}
+.nike .ttp-link {
+  position: absolute;
+}
+.nike .ttp-highlight {
+  position: relative;
+  width: 180px;
+  margin-bottom: -60px;
+  margin-left: 30px;
+}
+.nike .back-vid {
+  max-width: 75vw;
+  position: relative;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+.nike .front-vid {
+  position: relative;
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+.nike .details {
+  margin-top: 3em;
+  margin-left: 2em;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center;
+}
+.nike .details p {
+  margin: 0;
+}
 
 .portfolio h1 {
   font-size: 1.5rem;
-  grid-column: 1 / span 2;
-  max-height: 5rem; }
+  text-align: center;
+  max-height: 5rem;
+}
 .portfolio .logo-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative; }
+  position: relative;
+}
 .portfolio .portfolio-item {
   display: flex;
   min-width: 150px;
@@ -132,93 +168,118 @@ body {
   margin: 25px;
   box-sizing: border-box;
   justify-content: center;
-  text-decoration: none; }
+  text-decoration: none;
+}
 .portfolio .portfolio-item :hover {
   background-image: url("/img/circle-brush-2.png");
-  background-size: 150px; }
+  background-size: 150px;
+}
 
 .about {
-  font-family: 'Goudy Bookletter 1911'; }
-  .about .about-img {
-    margin-top: 13em;
-    min-width: 50vw; }
-  .about .about-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative; }
-  .about .about-item {
-    padding: 10px;
-    margin: 25px;
-    justify-content: center;
-    flex-grow: 1;
-    flex-shrink: 0; }
-  .about h2 {
-    font-size: 1.5rem; }
-  .about h3 {
-    font-size: 1rem; }
-    .about h3 p a {
-      text-decoration: none;
-      color: black; }
+  font-family: "Goudy Bookletter 1911";
+}
+.about .about-img {
+  margin-top: 13em;
+  min-width: 50vw;
+}
+.about .about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.about .about-item {
+  padding: 10px;
+  margin: 25px;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.about h2 {
+  font-size: 1.5rem;
+}
+.about h3 {
+  font-size: 1rem;
+}
+.about h3 p a {
+  text-decoration: none;
+  color: black;
+}
 
 .footer p {
-  color: black; }
+  color: black;
+}
 
 .brand-page {
-  margin-top: -100px; }
-  .brand-page .vid-line {
-    position: relative;
-    height: auto;
-    margin-top: -105px;
-    margin-left: 70px; }
-  .brand-page .amex-vid-highlight {
-    position: relative;
-    width: 110px;
-    margin-top: -105px;
-    margin-left: 210px; }
-  .brand-page .swatch-vid-highlight {
-    position: relative;
-    width: 150px;
-    margin-top: -105px;
-    margin-left: 150px; }
-  .brand-page .ttp-vid-highlight {
-    position: relative;
-    width: 120px;
-    margin-top: -105px;
-    margin-left: 140px; }
-  .brand-page h1 {
-    position: fixed;
-    margin-top: -80px;
-    margin-left: 100px;
-    margin-bottom: 40px;
-    font-size: 1.5rem; }
-  .brand-page .main-vid {
-    max-height: 75vh;
-    margin-bottom: 0; }
+  margin-top: -100px;
+}
+.brand-page .vid-line {
+  position: relative;
+  height: auto;
+  margin-top: -105px;
+  margin-left: 70px;
+}
+.brand-page .amex-vid-highlight {
+  position: relative;
+  width: 110px;
+  margin-top: -105px;
+  margin-left: 210px;
+}
+.brand-page .swatch-vid-highlight {
+  position: relative;
+  width: 150px;
+  margin-top: -105px;
+  margin-left: 150px;
+}
+.brand-page .ttp-vid-highlight {
+  position: relative;
+  width: 120px;
+  margin-top: -105px;
+  margin-left: 140px;
+}
+.brand-page h1 {
+  position: fixed;
+  margin-top: -80px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+.brand-page .main-vid {
+  max-height: 75vh;
+  margin-bottom: 0;
+}
 
 @media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
   body {
-    margin-top: 10em; }
+    margin-top: 10em;
+  }
 
   .home {
-    min-height: 25em; }
-    .home h1 {
-      font-size: 1rem; }
-    .home h2 {
-      font-size: 0.7rem; }
+    min-height: 25em;
+  }
+  .home h1 {
+    font-size: 1rem;
+  }
+  .home h2 {
+    font-size: 0.7rem;
+  }
 
   .nike {
-    max-height: 40em; }
-    .nike h2 {
-      font-size: 1.7rem; }
-    .nike .details {
-      margin-top: 3em;
-      margin-left: 14em;
-      grid-column: 2 / span 2;
-      grid-row: 1;
-      justify-self: center; }
-      .nike .details p {
-        font-size: 0.6rem; }
+    max-height: 40em;
+  }
+  .nike h2 {
+    font-size: 1.7rem;
+  }
+  .nike .details {
+    margin-top: 3em;
+    margin-left: 14em;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    justify-self: center;
+  }
+  .nike .details p {
+    font-size: 0.6rem;
+  }
 
   .portfolio .portfolio-item {
     display: flex;
@@ -228,44 +289,60 @@ body {
     padding: 10px;
     margin: 2.1em;
     box-sizing: border-box;
-    justify-content: center; }
+    justify-content: center;
+  }
 
   .brand-page {
-    margin-top: 0; } }
+    margin-top: 0;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 766px) {
   body {
-    margin-top: 5em; }
+    margin-top: 5em;
+  }
 
   .navbar .nav-menu {
-    grid-column: 2 / span 2; }
+    grid-column: 2 / span 2;
+  }
 
   .home {
-    min-height: 1em; }
-    .home h1 {
-      font-size: 0.8rem; }
-    .home h2 {
-      font-size: 0.6rem; }
+    min-height: 1em;
+  }
+  .home h1 {
+    font-size: 0.8rem;
+  }
+  .home h2 {
+    font-size: 0.6rem;
+  }
 
   .nike {
     min-height: 20em;
-    padding: 0; }
-    .nike h2 {
-      font-size: 1rem; }
-    .nike .line {
-      display: none; }
-    .nike .amex-highlight {
-      display: none; }
-    .nike .swatch-highlight {
-      display: none; }
-    .nike .ttp-highlight {
-      display: none; }
-    .nike .details {
-      margin-top: 2em;
-      grid-column: 2 / span 2;
-      grid-row: 3;
-      justify-self: center; }
-      .nike .details p {
-        font-size: 0.6rem; }
+    padding: 0;
+  }
+  .nike h2 {
+    font-size: 1rem;
+  }
+  .nike .line {
+    display: none;
+  }
+  .nike .amex-highlight {
+    display: none;
+  }
+  .nike .swatch-highlight {
+    display: none;
+  }
+  .nike .ttp-highlight {
+    display: none;
+  }
+  .nike .details {
+    margin-top: 2em;
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    justify-self: center;
+  }
+  .nike .details p {
+    font-size: 0.6rem;
+  }
 
   .portfolio .portfolio-item {
     display: flex;
@@ -275,12 +352,17 @@ body {
     padding: 10px;
     margin: 2.1em;
     box-sizing: border-box;
-    justify-content: center; }
+    justify-content: center;
+  }
 
   .brand-page {
-    margin-top: 150px; }
-    .brand-page h1 {
-      position: absolute; }
+    margin-top: 150px;
+  }
+  .brand-page h1 {
+    position: absolute;
+  }
 
   .about .about-img {
-    display: none; } }
+    display: none;
+  }
+}
